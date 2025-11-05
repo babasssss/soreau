@@ -1,0 +1,9 @@
+@theme {
+  --text-h1: clamp(2.375rem, 5vw, 4rem);     /* 38px à 64px */
+  --text-h2: clamp(2rem, 4vw, 2.375rem);     /* 32px à 38px */
+  --text-h3: clamp(1.5rem, 3vw, 2rem);     /* 24px à 32px */
+  --text-h4: clamp(1.125rem, 2vw, 1.375rem); /* 18px à 22px */
+  --text-h5: clamp(0.875rem, 1.5vw, 1rem);   /* 14px à 16px */
+  --text-h6: clamp(0.75rem, 1vw, 0.875rem);  /* 12px à 14px */
+  --text-10: 0.625rem /* 10px */
+}
