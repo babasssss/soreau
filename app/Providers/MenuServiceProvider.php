@@ -13,6 +13,7 @@ class MenuServiceProvider extends ServiceProvider
     add_action('after_setup_theme', function () {
       register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'soreau'),
+        'secondary_navigation' => __('Secondary Navigation', 'soreau'),
         'footer_navigation'  => __('Footer Navigation', 'soreau'),
       ]);
     }, 20);

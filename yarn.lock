@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@alpinejs/collapse@^3.15.1":
+  version "3.15.1"
+  resolved "https://registry.yarnpkg.com/@alpinejs/collapse/-/collapse-3.15.1.tgz#0b9922649fea9d53a4f0783d57d806fc2401bbfb"
+  integrity sha512-p3ejDFk8VWdrHa6+Fq3NQp6X4LxWoj2TFRgKEKPQPmVyJMV+Zf5m4ZUFk3Z54zIsgOM9JkAZE0Xany00ntTTng==
+
+"@alpinejs/persist@^3.15.1":
+  version "3.15.1"
+  resolved "https://registry.yarnpkg.com/@alpinejs/persist/-/persist-3.15.1.tgz#dc5c42a29eb7af13b3ed48704adddb65d99797bf"
+  integrity sha512-EtK4s7I0xhRTJsLaYjhJ4SyQan8+gkGaRYvzFw+ndg7rzrjSHzhgRmQ20GZbnjj+eDg77fPMTvzvngX6yAExbg==
+
 "@emnapi/core@^1.5.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@emnapi/core/-/core-1.7.0.tgz#135de4e8858763989112281bdf38ca02439db7c3"
@@ -433,12 +443,31 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.8.tgz#958b91c991b1867ced318bedea0e215ee050726e"
   integrity sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==
 
+"@vue/reactivity@~3.1.1":
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.1.5.tgz#dbec4d9557f7c8f25c2635db1e23a78a729eb991"
+  integrity sha512-1tdfLmNjWG6t/CsPldh+foumYFo3cpyCHgBYQ34ylaMsJ+SNHQ1kApMIa8jN+i593zQuaw3AdWH0nJTARzCFhg==
+  dependencies:
+    "@vue/shared" "3.1.5"
+
+"@vue/shared@3.1.5":
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.1.5.tgz#74ee3aad995d0a3996a6bb9533d4d280514ede03"
+  integrity sha512-oJ4F3TnvpXaQwZJNF3ZK+kLPHKarDmJjJ6jyzVNDKH9md1dptjC7lWR//jrGuLdek/U6iltWxqAnYOu8gCiOvA==
+
 "@wordpress/dependency-extraction-webpack-plugin@^6.27.0":
   version "6.34.0"
   resolved "https://registry.yarnpkg.com/@wordpress/dependency-extraction-webpack-plugin/-/dependency-extraction-webpack-plugin-6.34.0.tgz#23301274ce8fb20d13aebf081a8517859cdcb61c"
   integrity sha512-lynP46WtxueExZoWzDgM02dSt/11J50Wu2jqRKCIAVsID75cPhjYS59kMAyTppa9R9s9J9ZEdqL0gqXsXr3+bw==
   dependencies:
     json2php "^0.0.7"
+
+alpinejs@^3.15.1:
+  version "3.15.1"
+  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-3.15.1.tgz#d188dd27a68e30a32a5fa851c54c807456b11cd8"
+  integrity sha512-HLO1TtiE92VajFHtLLPK8BWaK1YepV/uj31UrfoGnQ00lyFOJZ+oVY3F0DghPAwvg8sLU79pmjGQSytERa2gEg==
+  dependencies:
+    "@vue/reactivity" "~3.1.1"
 
 detect-libc@^2.0.3:
   version "2.1.2"
