@@ -19,6 +19,7 @@ class Menu extends Component
             'primary_navigation'   => 'primary',
             'secondary_navigation' => 'secondary',
             'footer_navigation'    => 'footer',
+            'legal_navigation'     => 'legal',
             default                => 'primary',
         };
     }

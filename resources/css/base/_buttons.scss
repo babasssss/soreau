@@ -1,5 +1,15 @@
 .border-gradient-dark {
-  border: 1px solid transparent; /* nécessaire pour border-box */
+  border: 1px solid transparent;
   background: linear-gradient(var(--color-dark-12)) padding-box, linear-gradient(90deg, var(--color-dark-20) 0%, transparent 100%) border-box;
   @apply rounded-lg 1920:rounded-(--rounded-10);
+}
+
+.border-gradient-dark-footer-network {
+  border: 1px solid transparent;
+  background: linear-gradient(var(--color-dark-12)) padding-box, linear-gradient(180deg, var(--color-dark-20) 0%, transparent 100%) border-box;
+  @apply rounded-full;
+
+  &:hover {
+    background: linear-gradient(var(--color-purple-55)) padding-box, linear-gradient(180deg, var(--color-purple-55) 0%, var(--color-purple-55) 100%) border-box;
+  }
 }

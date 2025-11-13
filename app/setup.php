@@ -9,6 +9,12 @@ namespace App;
 use Illuminate\Support\Facades\Vite;
 
 /**
+ * Load all setup files.
+ * @return void
+ */
+require_once __DIR__ . '/Setup/__setup-dir.php';
+
+/**
  * Inject styles into the block editor.
  *
  * @return array
@@ -76,7 +82,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'primary_navigation' => __('Primary Navigation', 'soreau'),
     ]);
 
     /**
@@ -144,12 +150,12 @@ add_action('widgets_init', function () {
     ];
 
     register_sidebar([
-        'name' => __('Primary', 'sage'),
+        'name' => __('Primary', 'soreau'),
         'id' => 'sidebar-primary',
     ] + $config);
 
     register_sidebar([
-        'name' => __('Footer', 'sage'),
+        'name' => __('Footer', 'soreau'),
         'id' => 'sidebar-footer',
     ] + $config);
 });

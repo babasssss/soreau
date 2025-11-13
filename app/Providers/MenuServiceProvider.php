@@ -15,6 +15,7 @@ class MenuServiceProvider extends ServiceProvider
         'primary_navigation' => __('Primary Navigation', 'soreau'),
         'secondary_navigation' => __('Secondary Navigation', 'soreau'),
         'footer_navigation'  => __('Footer Navigation', 'soreau'),
+        'legal_navigation'  => __('Legal Navigation', 'soreau'),
       ]);
     }, 20);
   }

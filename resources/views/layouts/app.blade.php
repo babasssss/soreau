@@ -14,7 +14,7 @@
 
     <div id="app" class="flex flex-col justify-between items-start max-w-(--max-w-1920) mx-auto min-h-screen overflow-hidden">
       <a class="sr-only focus:not-sr-only" href="#main">
-        {{ __('Skip to content', 'sage') }}
+        {{ __('Skip to content', 'soreau') }}
       </a>
 
       <div id="content" class="content w-full">

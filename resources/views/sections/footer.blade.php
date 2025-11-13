@@ -28,11 +28,67 @@
       @foreach ($services as $service)
         <li class="flex 1920:gap-2.5 gap-1.5 items-center">
           <x-icon-start class="text-purple-80 1920:w-10 w-7.5 h-auto" />
-          <span class="truncate  text-purple-90 text-sm 1920:text-lg font-normal leading-150 uppercase">
+          <span class="truncate  text-purple-90 text-sm 1920:text-lg font-normal leading-150 uppercase select-none">
             {{ $service }}
           </span>
         </li>
       @endforeach
     </ul>
+  </div>
+  <div class="full-bleed-centered border-b border-dark-12 px-4 sm:px-0">
+    <div class="relative flex flex-col md:flex-row md:items-stretch w-full sm:w-8/10 mx-auto max-w-full 1440:max-w-(--max-w-1279) 1920:max-w-(--max-w-1593) bg-dark-03 border-l border-r border-dark-12">
+      <div class="flex flex-col items-start 1920:gap-15 1440:gap-12.5 gap-5 py-10 px-5 1440:py-20 1440:px-14 1920:py-25 1920:px-20">
+        <p class="text-grey-50 text-sm 1440:text-base 1920:text-xl font-semibold uppercase">
+          {{ __('A more meaningful home for photography', 'soreau') }}
+        </p>
+        <div class="flex flex-col items-start 1920:gap-2.5 gap-0">
+          <div class="flex items-center gap-2.5">
+            <h2 class="text-white text-h2-footer font-semibold uppercase">
+              {{ __("Let's", "soreau") }}
+            </h2>
+            <a href="#link-footer" class="group flex text-18 1920:py-4.5 1920:px-12.5 1440:py-4 1440:px-10 py-3.5 px-7.5 rounded-full bg-purple-55 shadow-footer">
+              <x-icon-arrow-up-right
+                class="text-white 1920:size-7.5 w-7.5 1440:size-6 size-5 transition-transform ease-in-out duration-300 group-hover:scale-[1.2] group-hover:rotate-45" />
+            </a>
+          </div>
+          <h2 class="text-white text-h2-footer font-semibold uppercase">
+            {{ __("Work Together", "soreau") }}
+          </h2>
+        </div>
+      </div>
+
+      <div class="flex-1 border-t md:border-l md:border-t-0 border-dark-12 py-10 px-5 1440:py-20 1440:px-14 1920:py-25 1920:px-20">
+        <x-menu name="footer_navigation" />
+      </div>
+        
+      <x-icon-design-footer class="absolute left-0 top-1/2 -translate-x-full -translate-y-1/2 text-dark-12 pointer-events-none select-none" aria-hidden="true"/>
+      <x-icon-design-footer class="absolute right-0 top-1/2 translate-x-full -translate-y-1/2 text-dark-12 pointer-events-none select-none rotate-180" aria-hidden="true"/>
+    </div>
+  </div>
+
+    <div class="relative flex flex-wrap 1920:py-10 1440:py-8.5 py-5 justify-center sm:justify-between items-center self-stretch gap-4">
+      <x-menu name="legal_navigation"/>
+      <p class="text-grey-50 text-sm 1920:text-lg leading-150 font-normal text-center">
+        © {{ now()->year }} {{ __('Bastien Soreau Développeur. Tous droits réservés.', 'soreau') }}
+      </p>
+      @if(get_theme_mod('social_links_linkedin') || get_theme_mod('social_links_youtube') || get_theme_mod('social_links_instagram'))
+        <div class="flex sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 p-2 1920:p-2.5 gap-2 1920:gap-2.5 justify-center items-center rounded-full border border-dark-12 bg-dark-03">
+          @if(get_theme_mod('social_links_linkedin'))
+            <a href="{{ get_theme_mod('social_links_linkedin') }}" target="_blank" rel="noopener noreferrer" class="group flex p-2.5 1920:p-3.5 items-center gap-2.5 1920:gap-3.5 rounded-full border-gradient-dark-footer-network hover:px-3.5 1920:hover:px-4.5 transition-all ease-in-out duration-300">
+              <x-icon-linkedin class="text-white 1920:size-5  size-4.5 group-hover:scale-110 transition-all ease-in-out duration-300" />
+            </a>
+          @endif
+          @if(get_theme_mod('social_links_youtube'))
+            <a href="{{ get_theme_mod('social_links_youtube') }}" target="_blank" rel="noopener noreferrer" class="group flex p-2.5 1920:p-3.5 items-center gap-2.5 1920:gap-3.5 rounded-full border-gradient-dark-footer-network hover:px-3.5 1920:hover:px-4.5 transition-all ease-in-out duration-300">
+              <x-icon-youtube class="text-white 1920:size-5  size-4.5 group-hover:scale-110 transition-all ease-in-out duration-300" />
+            </a>
+          @endif
+          @if(get_theme_mod('social_links_instagram'))
+            <a href="{{ get_theme_mod('social_links_instagram') }}" target="_blank" rel="noopener noreferrer" class="group flex p-2.5 1920:p-3.5 items-center gap-2.5 1920:gap-3.5 rounded-full border-gradient-dark-footer-network hover:px-3.5 1920:hover:px-4.5 transition-all ease-in-out duration-300">
+              <x-icon-instagram class="text-white 1920:size-5  size-4.5 group-hover:scale-110 transition-all ease-in-out duration-300" />
+            </a>
+          @endif
+        </div>
+      @endif
   </div>
 </div>  

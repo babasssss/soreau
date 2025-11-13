@@ -1,0 +1,4 @@
+.footer-legal-item:hover + .footer-legal-separator,
+.footer-legal-separator:has(+ .footer-legal-item:hover) {
+  @apply bg-purple-55;
+}
