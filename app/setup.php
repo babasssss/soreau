@@ -9,10 +9,9 @@ namespace App;
 use Illuminate\Support\Facades\Vite;
 
 /**
- * Load all setup files.
- * @return void
+ * Load the theme setup files.
  */
-require_once __DIR__ . '/Setup/__setup-dir.php';
+require_once get_theme_file_path('app/Setup/__setup-dir.php');
 
 /**
  * Inject styles into the block editor.

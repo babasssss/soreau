@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Setup\Blocks;
+
+use function Roots\view;
+
+add_action('init', __NAMESPACE__ . '\\register_simple_blocks');
+
+function register_simple_blocks(): void
+{
+    $blocks = [
+        'title',
+    ];
+
+    foreach ($blocks as $blockName) {
+        register_block_type(
+            get_theme_file_path("resources/js/blocks/{$blockName}"),
+            [
+                'render_callback' => function ($attributes, $content, $block) use ($blockName) {
+                    $viewPath = str_replace('/', '.', $blockName);
+
+                    return view("blocks.{$viewPath}", [
+                        'attributes' => $attributes,
+                        'content'    => $content,
+                        'block'      => $block,
+                    ])->render();
+                },
+            ]
+        );
+    }
+}

@@ -20,7 +20,7 @@
       <div id="content" class="content w-full">
         @include('sections.header')
 
-        <div class="w-full px-4 sm:px-0 sm:w-8/10 mx-auto max-w-full 1440:max-w-(--max-w-1279) 1920:max-w-(--max-w-1593)">
+        <div class="w-full px-4 sm:px-0 sm:w-8/10 mx-auto max-w-full 1440:max-w-(--max-w-1279) 1920:max-w-(--max-w-1593) my-20 1440:my-37.5 1920:my-50">
           <main id="main" class="main">
             @yield('content')
           </main>

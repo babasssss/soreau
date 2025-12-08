@@ -1,0 +1,16 @@
+{
+  "apiVersion": 3,
+  "name": "soreau/title",
+  "title": "Soreau : Title",
+  "category": "theme",
+  "description": "Title block for soreau theme.",
+  "supports": {
+    "customClassName": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "view:blocks.title"
+}

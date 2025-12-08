@@ -22,9 +22,9 @@ export default defineConfig({
     // Generate the theme.json file in the public/build/assets directory
     // based on the Tailwind config and the theme.json file from base theme folder
     wordpressThemeJson({
-      disableTailwindColors: false,
-      disableTailwindFonts: false,
-      disableTailwindFontSizes: false,
+      disableTailwindColors: true,
+      disableTailwindFonts: true,
+      disableTailwindFontSizes: true,
     }),
   ],
   resolve: {
@@ -33,6 +33,8 @@ export default defineConfig({
       '@styles': '/resources/css',
       '@fonts': '/resources/fonts',
       '@images': '/resources/images',
+      '@icons': '/resources/svg',
+      '@iconSoreau': '/resources/js/blocks/icon-soreau.jsx',
     },
   },
 })
