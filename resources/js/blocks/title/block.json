@@ -11,6 +11,16 @@
       "margin": true
     }
   },
+  "attributes": {
+    "subtitle": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    }
+  },
   "editorScript": "file:./index.js",
   "render": "view:blocks.title"
 }

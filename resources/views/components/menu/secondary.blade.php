@@ -5,7 +5,7 @@
     @foreach ($items as $item)
       @php($isActive = $item->active ?? false)
       @if($loop->first)
-        <a href="{{ $item->url }}" class="inline-flex items-center gap-2.5 whitespace-nowrap 1920:py-4 py-3.5 {{ ($item->active ?? false) ? 'px-6 1920:px-7.5 text-white' : 'px-5 1920:px-6 text-grey-70' }} hover:px-6 1920:hover:px-7.5 hover:[--fill:var(--color-dark-06)] hover:text-white border-gradient-dark transition-[padding,color,background-color] duration-200 ease-linear font-medium leading-150 text-sm 1920:text-lg !no-underline" @if($item->active ?? false) aria-current="page" @endif>
+        <a href="{{ $item->url }}" @class([ 'btn-soreau-primary', 'btn-soreau-primary-active' => $isActive, 'btn-soreau-primary-default' => ! $isActive, ]) @if($isActive) aria-current="page" @endif >
           {{ $item->label }}
         </a>
       @endif

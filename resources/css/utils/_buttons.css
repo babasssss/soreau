@@ -1,0 +1,11 @@
+@utility btn-soreau-primary {
+  @apply !inline-flex !items-center !gap-2.5 !whitespace-nowrap 1920:!py-4 !py-3.5 border-gradient-dark hover:[--fill:var(--color-dark-06)] transition-[padding,color,background-color] duration-200 ease-linear !font-medium !leading-150 !text-sm 1920:!text-lg !no-underline;
+}
+
+@utility btn-soreau-primary-default {
+  @apply !px-5 1920:!px-6 !text-grey-70 hover:!px-6 1920:hover:!px-7.5 hover:!text-white;
+}
+
+@utility btn-soreau-primary-active {
+  @apply !px-6 1920:!px-7.5 !text-white hover:!px-6 1920:hover:!px-7.5;
+}

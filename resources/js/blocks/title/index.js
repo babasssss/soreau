@@ -5,7 +5,6 @@ import Save from './save';
 import IconSoreau from '@iconSoreau';
 
 registerBlockType(metadata.name, {
-  ...metadata,
   icon: IconSoreau,
   edit: Edit,
   save: Save,

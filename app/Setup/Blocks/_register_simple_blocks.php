@@ -13,7 +13,7 @@ function register_simple_blocks(): void
     ];
 
     foreach ($blocks as $blockName) {
-        register_block_type(
+        register_block_type_from_metadata(
             get_theme_file_path("resources/js/blocks/{$blockName}"),
             [
                 'render_callback' => function ($attributes, $content, $block) use ($blockName) {
