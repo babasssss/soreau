@@ -1,0 +1,22 @@
+{
+  "apiVersion": 3,
+  "name": "soreau/introduction",
+  "title": "Soreau : Introduction",
+  "category": "theme",
+  "description": "Introduction block for soreau theme.",
+  "supports": {
+    "customClassName": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "attributes": {
+    "image": {
+      "type": "object",
+      "default": null
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "view:blocks.introduction"
+}

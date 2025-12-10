@@ -16,7 +16,39 @@
       "defaultDuotone": false,
       "defaultGradients": false,
       "defaultPalette": false,
-      "duotone": []
+      "duotone": [],
+      "gradients": [],
+      "palette": [
+        { "slug": "white", "color": "#FFFFFF", "name": "White" },
+        { "slug": "black", "color": "#000000", "name": "Black" },
+        { "slug": "purple-55", "color": "#4A2CED", "name": "Purple 55" },
+        { "slug": "purple-60", "color": "#5E43EF", "name": "Purple 60" },
+        { "slug": "purple-70", "color": "#8672F3", "name": "Purple 70" },
+        { "slug": "purple-80", "color": "#AEA1F7", "name": "Purple 80" },
+        { "slug": "purple-90", "color": "#D6D0FB", "name": "Purple 90" },
+        { "slug": "purple-95", "color": "#EAE7FD", "name": "Purple 95" },
+        { "slug": "purple-97", "color": "#F3F1FE", "name": "Purple 97" },
+        { "slug": "purple-99", "color": "#FBFAFF", "name": "Purple 99" },
+        { "slug": "dark-03", "color": "#070708", "name": "Dark 03" },
+        { "slug": "dark-06", "color": "#0E0E10", "name": "Dark 06" },
+        { "slug": "dark-08", "color": "#131316", "name": "Dark 08" },
+        { "slug": "dark-12", "color": "#1C1C21", "name": "Dark 12" },
+        { "slug": "dark-15", "color": "#232329", "name": "Dark 15" },
+        { "slug": "dark-20", "color": "#2F2F37", "name": "Dark 20" },
+        { "slug": "dark-25", "color": "#3B3B45", "name": "Dark 25" },
+        { "slug": "dark-30", "color": "#474752", "name": "Dark 30" },
+        { "slug": "turquoise-700", "color": "#027862", "name": "Turquoise 700" },
+        { "slug": "turquoise-500", "color": "#1AE2BC", "name": "Turquoise 500" },
+        { "slug": "turquoise-300", "color": "#A4F4E5", "name": "Turquoise 300" },
+        { "slug": "grey-40", "color": "#62646C", "name": "Grey 40" },
+        { "slug": "grey-50", "color": "#797C86", "name": "Grey 50" },
+        { "slug": "grey-70", "color": "#AFB0B6", "name": "Grey 70" },
+        { "slug": "grey-80", "color": "#CACACE", "name": "Grey 80" },
+        { "slug": "grey-90", "color": "#E4E4E6", "name": "Grey 90" },
+        { "slug": "grey-95", "color": "#F2F2F3", "name": "Grey 95" },
+        { "slug": "grey-97", "color": "#F7F7F8", "name": "Grey 97" },
+        { "slug": "grey-99", "color": "#FCFCFD", "name": "Grey 99" }
+      ]
     },
     "custom": {
       "spacing": {},
@@ -27,11 +59,45 @@
     },
     "spacing": {
       "padding": true,
+      "margin": true,
       "units": ["px", "%", "em", "rem", "vw", "vh"]
     },
     "typography": {
-      "defaultFontSizes": false,
-      "customFontSize": false
+
+      "fontFamilies": [
+        {
+          "fontFamily": "'Manrope', sans-serif",
+          "name": "Manrope",
+          "slug": "manrope"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "p",
+          "size": "clamp(0.875rem, 4vw, 1.125rem)",
+          "name": "Paragraph ☞ (14px - 18px)"
+        },
+        {
+          "slug": "subtitle-h2",
+          "size": "clamp(0.875rem, 4vw, 1.25rem)",
+          "name": "Subtitle Heading 2 ☞ (14px - 20px)"
+        },
+        {
+          "slug": "h3",
+          "size": "clamp(1.25rem, 4vw, 1.875rem)",
+          "name": "Heading 3 ☞ (20px - 30px)"
+        },
+        {
+          "slug": "h2",
+          "size": "clamp(1.75rem, 4vw, 3.625rem)",
+          "name": "Heading 2 ☞ (28px - 58px)"
+        },
+        {
+          "slug": "h1",
+          "size": "clamp(2.5rem, 4vw, 5rem)",
+          "name": "Heading 1 ☞ (40px - 80px)"
+        }
+      ]
     }
   }
 }

@@ -10,6 +10,7 @@ function register_simple_blocks(): void
 {
     $blocks = [
         'title',
+        'introduction',
     ];
 
     foreach ($blocks as $blockName) {

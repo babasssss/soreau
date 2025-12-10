@@ -26,7 +26,7 @@ export default function Edit({ attributes, setAttributes }) {
       {/* Sous-titre */}
       <RichText
         tagName="p"
-        className="soreau-title__subtitle"
+        className="self-stretch text-grey-50 font-manrope text-subtitle-h2 font-semibold uppercase leading-normal"
         value={subtitle}
         onChange={(value) => setAttributes({ subtitle: value })}
         placeholder={__('Sous-titre…', 'soreau')}
@@ -36,7 +36,7 @@ export default function Edit({ attributes, setAttributes }) {
       {/* Titre */}
       <RichText
         tagName="h2"
-        className="soreau-title__title"
+        className="uppercase"
         value={title}
         onChange={(value) => setAttributes({ title: value })}
         placeholder={__('Titre…', 'soreau')}

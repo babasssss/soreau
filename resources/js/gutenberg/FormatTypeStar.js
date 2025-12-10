@@ -4,21 +4,21 @@ import { __ } from '@wordpress/i18n';
 import { createElement } from '@wordpress/element';
 import IconSoreau from '@iconSoreau';
 
-export const registerAirtableFormat = () => {
-  registerFormatType('custom/airtable', {
-    title: __('Airtable', 'soreau'),
+export const registerStarFormat = () => {
+  registerFormatType('custom/star', {
+    title: __('Star', 'soreau'),
     tagName: 'span',
-    className: 'has-airtable-style',
+    className: 'has-star-style',
     edit({ isActive, value, onChange }) {
       return createElement(RichTextToolbarButton, {
         icon: IconSoreau,
-        title: __('Airtable', 'soreau'),
+        title: __('Star', 'soreau'),
         onClick: () => {
           onChange(
             isActive
-              ? removeFormat(value, 'custom/airtable')
+              ? removeFormat(value, 'custom/star')
               : applyFormat(value, {
-                  type: 'custom/airtable',
+                  type: 'custom/star',
                 })
           );
         },

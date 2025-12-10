@@ -1,3 +1,9 @@
+h1 {
+  @apply text-grey-90 font-manrope font-semibold text-h1 leading-normal; 
+}
 h2 {
-  @apply self-stretch text-white font-manrope font-semibold text-h2 leading-normal uppercase;
+  @apply self-stretch text-white font-manrope font-semibold text-h2 leading-normal;
+}
+p {
+  @apply text-grey-50 font-manrope text-p font-medium leading-150;
 }

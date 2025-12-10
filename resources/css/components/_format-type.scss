@@ -1,0 +1,20 @@
+.has-star-style {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 1.2em;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-image: url('@icons/logo-star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    flex-shrink: 0;
+    aspect-ratio: 79.78/67.00;
+  }
+}
