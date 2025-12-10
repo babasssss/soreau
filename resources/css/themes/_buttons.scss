@@ -1,21 +1,27 @@
 @use "../utils/_buttons.css";
 
 @layer components {
-  .is-style-soreau-primary .wp-block-button__link {
-    @apply btn-soreau-primary btn-soreau-primary-default !text-white relative;
+  .wp-block-button.is-style-soreau-primary {
+    .wp-block-button__link {
+      @apply btn-soreau-primary btn-soreau-primary-default !text-white relative;
 
-    &::after {
-      content: '';
-      -webkit-mask: url('@icons/arrow-big-down-dash.svg') no-repeat center / contain;
-      mask: url('@icons/arrow-big-down-dash.svg') no-repeat center / contain;
-      @apply bg-current w-5 h-5 inline-block align-middle rotate-270;
+      &::after {
+        content: '';
+        -webkit-mask: url('@icons/arrow-big-down-dash.svg') no-repeat center / contain;
+        mask: url('@icons/arrow-big-down-dash.svg') no-repeat center / contain;
+        @apply bg-current w-5 h-5 inline-block align-middle rotate-270 transition-transform duration-200 ease-linear translate-x-0;
+      }
 
-      @apply transition-transform duration-200 ease-linear;
-      @apply translate-x-0;
+      &:hover::after {
+        @apply translate-x-2;
+      }
     }
 
-    &:hover::after {
-      @apply translate-x-2;
+    &.download-icon {
+      .wp-block-button__link::after {
+        -webkit-mask: url('@icons/file-download.svg') no-repeat center / contain;
+        mask: url('@icons/file-download.svg') no-repeat center / contain;
+      }
     }
   }
 }

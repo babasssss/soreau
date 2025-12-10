@@ -71,24 +71,8 @@
       <p class="text-grey-50 text-sm 1920:text-lg leading-150 font-normal text-center">
         © {{ now()->year }} {{ __('Bastien Soreau Développeur. Tous droits réservés.', 'soreau') }}
       </p>
-      @if(get_theme_mod('social_links_linkedin') || get_theme_mod('social_links_youtube') || get_theme_mod('social_links_instagram'))
-        <div class="flex sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 p-2 1920:p-2.5 gap-2 1920:gap-2.5 justify-center items-center rounded-full border border-dark-12 bg-dark-03">
-          @if(get_theme_mod('social_links_linkedin'))
-            <a href="{{ get_theme_mod('social_links_linkedin') }}" target="_blank" rel="noopener noreferrer" class="group flex p-2.5 1920:p-3.5 items-center gap-2.5 1920:gap-3.5 rounded-full border-gradient-dark-footer-network hover:px-3.5 1920:hover:px-4.5 transition-all ease-in-out duration-300">
-              <x-icon-linkedin class="text-white 1920:size-5  size-4.5 group-hover:scale-110 transition-all ease-in-out duration-300" />
-            </a>
-          @endif
-          @if(get_theme_mod('social_links_youtube'))
-            <a href="{{ get_theme_mod('social_links_youtube') }}" target="_blank" rel="noopener noreferrer" class="group flex p-2.5 1920:p-3.5 items-center gap-2.5 1920:gap-3.5 rounded-full border-gradient-dark-footer-network hover:px-3.5 1920:hover:px-4.5 transition-all ease-in-out duration-300">
-              <x-icon-youtube class="text-white 1920:size-5  size-4.5 group-hover:scale-110 transition-all ease-in-out duration-300" />
-            </a>
-          @endif
-          @if(get_theme_mod('social_links_instagram'))
-            <a href="{{ get_theme_mod('social_links_instagram') }}" target="_blank" rel="noopener noreferrer" class="group flex p-2.5 1920:p-3.5 items-center gap-2.5 1920:gap-3.5 rounded-full border-gradient-dark-footer-network hover:px-3.5 1920:hover:px-4.5 transition-all ease-in-out duration-300">
-              <x-icon-instagram class="text-white 1920:size-5  size-4.5 group-hover:scale-110 transition-all ease-in-out duration-300" />
-            </a>
-          @endif
-        </div>
-      @endif
+      <div class="sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2">
+        <x-social-links />
+      </div>
   </div>
 </div>  

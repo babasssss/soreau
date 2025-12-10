@@ -1,13 +1,13 @@
 @if (!empty($items) && is_array($items))
   @if(($variant ?? null) !== 'responsive')
     <nav aria-label="{{ $m?->get('name') ?? 'Primary navigation' }}" class="hidden lg:block absolute bottom-0 left-1/2 -translate-x-1/2 z-10 w-max">
-      <ul class="flex items-center overflow-hidden 1920:rounded-t-xl rounded-t-(--rounded-10) border-t border-r border-l border-dark-12">
+      <ul class="flex items-center overflow-hidden 1920:rounded-t-xl rounded-t-(--radius-10) border-t border-r border-l border-dark-12">
         @foreach ($items as $item)
           @php
             $isActive = $item->active ?? false;
             $rounded = $loop->first
-              ? '1920:rounded-tl-xl rounded-tl-(--rounded-10)'
-              : ($loop->last ? '1920:rounded-tr-xl rounded-tr-(--rounded-10)' : '');
+              ? '1920:rounded-tl-xl rounded-tl-(--radius-10)'
+              : ($loop->last ? '1920:rounded-tr-xl rounded-tr-(--radius-10)' : '');
           @endphp
 
           <li @class(['group', 'border-r border-dark-12' => !$loop->last, 'bg-dark-08' => $isActive, $rounded, ])>
@@ -23,7 +23,7 @@
     <nav aria-label="{{ $m?->get('name') ?? 'Primary navigation' }}" class="flex flex-col items-start justify-center w-full">
       <div class="flex flex-col gap-4">
         @foreach ($items as $item)
-          <a href="{{ $item->url }}" class="inline-flex items-center gap-2.5 whitespace-nowrap py-3 px-7.5 1920:px-10 text-grey-70 border border-dark-12 rounded-(--rounded-10)">
+          <a href="{{ $item->url }}" class="inline-flex items-center gap-2.5 whitespace-nowrap py-3 px-7.5 1920:px-10 text-grey-70 border border-dark-12 rounded-(--radius-10)">
             {{ $item->label }}
           </a>
         @endforeach

@@ -5,6 +5,9 @@ import { registerButtonStyles } from './gutenberg/RegisterButtonStyles';
 
 import './blocks/title';
 import './blocks/introduction';
+import './blocks/social-links';
+import './blocks/separator';
+import './blocks/hero';
 
 domReady(() => {
   registerButtonStyles();

@@ -11,6 +11,9 @@ function register_simple_blocks(): void
     $blocks = [
         'title',
         'introduction',
+        'social-links',
+        'separator',
+        'hero',
     ];
 
     foreach ($blocks as $blockName) {

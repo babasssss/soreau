@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "soreau/hero",
+  "title": "soreau : Hero",
+  "category": "theme",
+  "description": "Hero block for soreau theme.",
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "render": "view:blocks.hero"
+}

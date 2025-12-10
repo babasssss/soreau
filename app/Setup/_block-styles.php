@@ -3,9 +3,9 @@
 namespace App\Setup;
 
 add_action('init', function () {
-    // Style Primary
+    // Style Primary Button Soreau
     register_block_style('core/button', [
         'name'  => 'soreau-primary',
-        'label' => __('SOREAU Primary', 'soreau'),
+        'label' => __('BTN SOREAU', 'soreau'),
     ]);
 });

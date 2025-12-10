@@ -1,0 +1,9 @@
+{
+  "apiVersion": 3,
+  "name": "soreau/social-links",
+  "title": "Soreau : Social Links",
+  "category": "theme",
+  "description": "Social Links block for soreau theme.",
+  "editorScript": "file:./index.js",
+  "render": "view:blocks.social-links"
+}

@@ -1,0 +1,9 @@
+{
+  "apiVersion": 3,
+  "name": "soreau/separator",
+  "title": "Soreau : Separator",
+  "category": "theme",
+  "description": "Separator block for soreau theme.",
+  "editorScript": "file:./index.js",
+  "render": "view:blocks.separator"
+}
