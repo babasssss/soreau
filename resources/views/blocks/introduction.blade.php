@@ -1,7 +1,5 @@
 <div {!! soreau_block_wrapper( $block, $attributes, 'soreau-introduction', [], ['data-block-name' => $block->name ?? null] ) !!}>
-  <div class="grid grid-cols-1 gap-5 1920:gap-7.5 mt-10 1440:mt-15 1920:mt-20 
-          xl:grid-cols-[minmax(0,_1fr)_minmax(0,_1fr)]">
-
+  <div class="grid grid-cols-1 gap-5 1920:gap-7.5 mt-10 1440:mt-15 1920:mt-20 xl:grid-cols-[minmax(0,_1fr)_minmax(0,_1fr)]">
     <div>
       @if(!empty($attributes['image']))
         <img
