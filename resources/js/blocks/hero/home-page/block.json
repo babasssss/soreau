@@ -8,6 +8,15 @@
   "supports": {
     "html": false
   },
+  "attributes": {
+    "images": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object"
+      }
+    }
+  },
   "editorScript": "file:./index.js",
   "render": "view:blocks.hero.home-page"
 }
