@@ -1,0 +1,9 @@
+<svg viewBox="0 0 100 100" width="260" height="260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="cut">
+      <rect width="100" height="100" fill="white"/>
+      <circle cx="100" cy="100" r="100" fill="black"/>
+    </mask>
+  </defs>
+  <rect width="100" height="100" fill="#070708" mask="url(#cut)"/>
+</svg>
