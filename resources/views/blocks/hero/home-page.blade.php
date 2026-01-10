@@ -7,7 +7,7 @@
       <div class="relative z-10 flex flex-col justify-center items-start 1920:gap-2.5 gap-1 self-stretch">
         {!! $content !!}
       </div>
-      <div class="relative z-10 w-full">
+      <div class="relative z-10 w-full xl:w-auto">
         <x-lets-work-together />
       </div>
     </div>
