@@ -7,6 +7,7 @@ export default function Edit() {
       <InnerBlocks
         allowedBlocks={[
           'soreau/home-page',
+          'soreau/about-me', 
         ]}
         template={[['soreau/home-page']]}
         renderAppender={InnerBlocks.ButtonBlockAppender}

@@ -9,6 +9,7 @@ import './blocks/social-links';
 import './blocks/separator';
 import './blocks/hero';
 import './blocks/hero/home-page';
+import './blocks/hero/about-me';
 
 domReady(() => {
   registerButtonStyles();

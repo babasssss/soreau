@@ -1,0 +1,15 @@
+{
+  "apiVersion": 3,
+  "name": "soreau/about-me",
+  "title": "soreau : About Me",
+  "category": "theme",
+  "description": "About Me block for soreau theme.",
+  "parent": ["soreau/hero"],
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+  },
+  "editorScript": "file:./index.js",
+  "render": "view:blocks.hero.about-me"
+}

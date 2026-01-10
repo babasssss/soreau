@@ -15,6 +15,7 @@ function register_simple_blocks(): void
         'separator',
         'hero',
         'hero/home-page',
+        'hero/about-me',
     ];
 
     foreach ($blocks as $blockName) {
