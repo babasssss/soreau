@@ -10,6 +10,8 @@ import './blocks/separator';
 import './blocks/hero';
 import './blocks/hero/home-page';
 import './blocks/hero/about-me';
+import './blocks/cards';
+import './blocks/cards/timeline';
 
 domReady(() => {
   registerButtonStyles();

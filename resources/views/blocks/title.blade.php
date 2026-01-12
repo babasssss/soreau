@@ -1,5 +1,5 @@
 <div {!! soreau_block_wrapper( $block, $attributes, 'soreau-title', [], ['data-block-name' => $block->name ?? null] ) !!}>
-  <div class="flex flex-col sm:flex-row pb-5 1440:pb-10 1920:pb-12.5 items-start sm:items-center gap-5 self-stretch w-fullborder border-b border-dark-12">
+  <div class="flex flex-col sm:flex-row pb-5 1440:pb-10 1920:pb-12.5 items-start sm:items-center gap-5 self-stretch w-fullborder border-b border-dark-12 mb-10 1440:mb-15 1920:mb-20">
     @if(!empty(trim($attributes['subtitle'] ?? '')) || !empty(trim($attributes['title'] ?? '')))
       <div class="flex flex-col items-start gap-1 flex-[1_0_0]">
         @if(!empty(trim($attributes['subtitle'] ?? '')))

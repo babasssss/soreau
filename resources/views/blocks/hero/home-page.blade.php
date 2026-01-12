@@ -15,7 +15,7 @@
 
   <x-services-banner />
 
-  <div class="relative flex items-start w-full gap-2 1440:gap-4 mb-20 1440:mb-37.5 1920:mb-50">
+  <div class="relative flex items-start w-full gap-2 1440:gap-4">
     <div class="relative min-w-0 basis-0 grow-[104.5] flex flex-col gap-2 1440:gap-4 1440:grow-0 1440:shrink-0 1440:basis-auto 1440:w-104.5 1920:w-130">
       <x-icon-arc-concave class="absolute right-0 top-[calc(28.75%)] -translate-y-1/2 z-10 pointer-events-none rotate-180 h-4 w-4" />
 

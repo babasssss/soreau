@@ -12,7 +12,7 @@
   <body @php(body_class('font-manrope bg-dark-03'))>
     @php(wp_body_open())
 
-    <div id="app" class="flex flex-col justify-between items-start max-w-(--max-w-1920) mx-auto min-h-screen overflow-hidden">
+    <div id="app" class="flex flex-col justify-between items-start max-w-(--max-w-1920) mx-auto min-h-screen overflow-hidden 1920:gap-30 1440:gap-22.5 gap-10">
       <a class="sr-only focus:not-sr-only" href="#main">
         {{ __('Skip to content', 'soreau') }}
       </a>
@@ -21,7 +21,7 @@
         @include('sections.header')
 
         <div class="w-full px-4 sm:px-0 sm:w-8/10 mx-auto max-w-full 1440:max-w-(--max-w-1279) 1920:max-w-(--max-w-1593) 1920:my-20 1440:my-15 my-10">
-          <main id="main" class="main">
+          <main id="main" class="main flex flex-col 1920:gap-50 1440:gap-37.5 gap-20">
             @yield('content')
           </main>
         </div>

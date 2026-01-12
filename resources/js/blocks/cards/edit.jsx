@@ -1,0 +1,16 @@
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
+
+export default function Edit() {
+  const blockProps = useBlockProps();
+  return (
+    <div {...blockProps}>
+      <InnerBlocks
+        allowedBlocks={[
+          'soreau/timeline',
+        ]}
+        template={[['soreau/timeline']]}
+        renderAppender={InnerBlocks.ButtonBlockAppender}
+      />
+    </div>
+  );
+}

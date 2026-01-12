@@ -42,13 +42,10 @@ export default function Edit({ attributes, setAttributes }) {
         placeholder={__('Titre…', 'soreau')}
         allowedFormats={[]} // idem
       />
-
-      {/* Bouton Gutenberg natif */}
-      <InnerBlocks
-        allowedBlocks={['core/button']}
-        template={BUTTON_TEMPLATE}
-        templateLock={false}
-      />
+      
+      <div className='mb-7'>
+        <InnerBlocks renderAppender={InnerBlocks.ButtonBlockAppender} />
+      </div>
     </div>
   );
 }

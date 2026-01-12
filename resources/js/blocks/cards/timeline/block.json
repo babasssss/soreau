@@ -1,0 +1,13 @@
+{
+  "apiVersion": 3,
+  "name": "soreau/timeline",
+  "title": "soreau : Timeline",
+  "category": "theme",
+  "description": "Timeline block for soreau theme.",
+  "parent": ["soreau/cards"],
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "render": "view:blocks.cards.timeline"
+}

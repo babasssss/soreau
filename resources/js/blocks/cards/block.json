@@ -1,0 +1,12 @@
+{
+  "apiVersion": 3,
+  "name": "soreau/cards",
+  "title": "soreau : Cards",
+  "category": "theme",
+  "description": "Cards block for soreau theme.",
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "render": "view:blocks.cards"
+}

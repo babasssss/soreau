@@ -1,0 +1,18 @@
+.wp-block-columns {
+  &.is-layout-flex {
+    @apply 1920:gap-7.5 gap-5 1920:mb-7.5 mb-5;
+    
+    &:last-child {
+      @apply 1920:mb-0 mb-0;
+    }
+  }
+
+  .wp-block-column {
+    .wp-block-soreau-cards {
+      @apply h-full;
+      .wp-block-soreau-timeline {
+        @apply h-full;
+      }
+    }
+  }
+}
