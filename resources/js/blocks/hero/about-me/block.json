@@ -9,6 +9,25 @@
     "html": false
   },
   "attributes": {
+    "subtitle": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundImage": {
+      "type": "object",
+      "default": {}
+    },
+    "keyFigures": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object"
+      }
+    }
   },
   "editorScript": "file:./index.js",
   "render": "view:blocks.hero.about-me"

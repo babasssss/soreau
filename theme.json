@@ -88,6 +88,16 @@
           "name": "Heading 3 ☞ (20px - 30px)"
         },
         {
+          "slug": "h3.5",
+          "size": "clamp(1.5rem, 2.36111vw, 2.75rem)",
+          "name": "Heading 3.5 ☞ (24px - 44px)"
+        },
+        {
+          "slug": "h3.75",
+          "size": "clamp(1.75rem, 2.36111vw, 3rem)",
+          "name": "Heading 3.75 ☞ (28px - 48px)"
+        },
+        {
           "slug": "h2",
           "size": "clamp(1.75rem, 4vw, 3.625rem)",
           "name": "Heading 2 ☞ (28px - 58px)"
