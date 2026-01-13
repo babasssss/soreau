@@ -8,6 +8,7 @@ export default function Edit() {
         allowedBlocks={[
           'soreau/home-page',
           'soreau/about-me', 
+          'soreau/blog-projets',
         ]}
         template={[['soreau/home-page']]}
         renderAppender={InnerBlocks.ButtonBlockAppender}
