@@ -1,29 +1,41 @@
 <div {!! soreau_block_wrapper($block, $attributes, 'soreau-about-me', [], ['data-block-name' => $block->name ?? null]) !!}>
   <div class="flex flex-col items-start gap-15 1440:gap-20 1920:gap-25">
-    <div class="relative h-auto w-full overflow-hidden rounded-2xl bg-dark-12">
+    <div class="relative h-auto w-full overflow-hidden rounded-2xl lg:bg-dark-12">
+
       @if($url = data_get($attributes, 'backgroundImage.url'))
         <img
           src="{{ $url }}"
           alt="{{ data_get($attributes, 'backgroundImage.alt') }}"
-          class="absolute inset-0 h-full w-full object-cover"
+          class="block w-full h-auto object-cover lg:hidden mb-7.5"
           loading="lazy"
           decoding="async"
         />
       @endif
 
-      <div class="w-full relative">
-        @if(!empty($attributes['subtitle']) || !empty($attributes['title']))
-          <div class="bg-dark-03 w-min relative pr-4 1440:pr-6">
-            <p class="!text-subtitle-h2">{{ $attributes['subtitle'] }}</p>
-            <h1 class="!text-h2 !text-white uppercase whitespace-nowrap">{{ $attributes['title'] }}</h1>
-            <x-icon-arc-concave class="absolute right-0 top-0 translate-x-2/2 z-10 pointer-events-none rotate-0 size-5" />
-            <x-icon-arc-concave class="absolute right-0 bottom-0 translate-x-2/2 z-10 pointer-events-none rotate-270 size-5" />
-          </div>
-        @endif
-        <x-icon-arc-concave class="absolute right-0 top-0 z-10 pointer-events-none rotate-90 size-5" />
-        <x-icon-arc-concave class="absolute right-0 bottom-0 z-10 pointer-events-none rotate-180 size-5" />
-      </div>
-      
+      @if($url = data_get($attributes, 'backgroundImage.url'))
+        <img
+          src="{{ $url }}"
+          alt="{{ data_get($attributes, 'backgroundImage.alt') }}"
+          class="hidden lg:block absolute inset-0 h-full w-full object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+      @endif
+
+    <div class="w-full relative bg-dark-12 lg:bg-transparent">
+      @if(!empty($attributes['subtitle']) || !empty($attributes['title']))
+        <div class="bg-dark-03 w-max lg:w-min relative pr-4 1440:pr-6">
+          <p class="!text-subtitle-h2">{{ $attributes['subtitle'] }}</p>
+          <h1 class="!text-h2 !text-white uppercase whitespace-normal sm:whitespace-nowrap">{{ $attributes['title'] }}</h1>
+          <x-icon-arc-concave class="absolute right-0 top-0 translate-x-2/2 z-10 pointer-events-none rotate-0 size-5" />
+          <x-icon-arc-concave class="absolute right-0 bottom-0 translate-x-2/2 z-10 pointer-events-none rotate-270 size-5" />
+        </div>
+      @endif
+
+      <x-icon-arc-concave class="absolute right-0 top-0 z-10 pointer-events-none rotate-90 size-5" />
+      <x-icon-arc-concave class="absolute right-0 bottom-0 z-10 pointer-events-none rotate-180 size-5" />
+    </div>
+
       <div class="w-full bg-dark-03 py-4 relative">
         <div class="grid grid-cols-2 grid-rows-3 gap-2.5 1920:gap-5 self-stretch md:grid-cols-6 md:grid-rows-2 lg:grid-cols-5 lg:grid-rows-1">
           @if($keyFigures = data_get($attributes, 'keyFigures'))
@@ -47,13 +59,13 @@
         </div>
         <x-icon-arc-concave class="absolute right-0 bottom-0 translate-y-2/2 z-10 pointer-events-none rotate-90 size-5" />
       </div>
-      <div class="bg-dark-03 py-3 w-5/12 relative">
+      <div class="bg-dark-03 py-3 w-5/12 relative hidden lg:block">
         <x-icon-wave class="absolute right-0 top-0 z-10 pointer-events-none rotate-0 size-6 translate-x-2/2" />
       </div>
-      <div class="h-54">
+      <div class="hidden lg:block h-54">
         <x-icon-arc-concave class="pointer-events-none rotate-0 size-5" />
       </div>
-      <div class="flex justify-between items-end self-stretch">
+      <div class="hidden lg:flex justify-between items-end self-stretch">
         <div class="flex relative px-5 py-6 bg-dark-03 rounded-tr-2xl">
           <x-icon-north-star class="text-dark-20 1920:size-34.25 1440:size-25" />
           <x-icon-arc-concave class="absolute left-0 top-0 -translate-y-2/2 z-10 pointer-events-none rotate-270 size-5" />
