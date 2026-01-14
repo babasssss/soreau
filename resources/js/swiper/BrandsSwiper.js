@@ -11,7 +11,7 @@ export const initBrandsSwiper = () => {
 
     new Swiper(root, {
       modules: [Navigation, A11y],
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 40,
       watchOverflow: true,
       a11y: true,
@@ -19,6 +19,12 @@ export const initBrandsSwiper = () => {
       navigation: nextEl && prevEl ? { nextEl, prevEl } : undefined,
 
       breakpoints: {
+        810: {
+          slidesPerView: 2,
+        },
+        1440: {
+          slidesPerView: 3,
+        },
         1920: {
           spaceBetween: 50,
         },

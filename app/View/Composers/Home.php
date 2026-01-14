@@ -3,6 +3,7 @@
 namespace App\View\Composers;
 
 use Roots\Acorn\View\Composer;
+use DateTimeZone;
 
 class Home extends Composer
 {
@@ -43,27 +44,30 @@ class Home extends Composer
             $cards = array_map(function ($p) {
                 $id = $p->ID;
 
-                $authorId = (int) get_post_field('post_author', $id);
+                $thumbId  = get_post_thumbnail_id($id);
+                $thumbAlt = $thumbId ? get_post_meta($thumbId, '_wp_attachment_image_alt', true) : '';
 
                 return [
                     'id'        => $id,
-                    'classes'   => implode(' ', get_post_class('rounded-2xl border border-dark-12 bg-dark-06 p-5', $id)),
                     'permalink' => get_permalink($id),
                     'title'     => get_the_title($id),
-                    'dateIso'   => get_the_date('c', $id),
-                    'dateLabel' => get_the_date('', $id),
-                    'author'    => [
-                        'name' => get_the_author_meta('display_name', $authorId),
-                        'link' => get_author_posts_url($authorId),
-                    ],
-                    'excerpt'   => get_the_excerpt($id),
+                     // dates (propre pour <time>)
+                    'dateLabel' => wp_date('F Y', get_post_timestamp($id), new \DateTimeZone('Europe/Paris')),
+                    'dateIso'   => get_post_time('c', true, $id),
+
+                    // featured image
+                    'thumb' => $thumbId ? [
+                        'id'  => $thumbId,
+                        'url' => wp_get_attachment_image_url($thumbId, 'large'),
+                        'alt' => $thumbAlt ?: get_the_title($id),
+                    ] : null,
                 ];
             }, $posts);
 
             $groups[] = [
                 'term'  => $cat,
                 'link'  => get_category_link($cat->term_id),
-                'cards' => $cards, // <- on passe des cards prêtes
+                'cards' => $cards,
             ];
         }
 
