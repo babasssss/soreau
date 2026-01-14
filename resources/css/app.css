@@ -1,4 +1,7 @@
 @import "tailwindcss" theme(static);
+@import "swiper/css";
+@import "swiper/css/navigation";
+
 @source "../views/";
 @source "../../app/";
 

@@ -3,4 +3,5 @@ import.meta.glob([
   '../fonts/**',
 ]);
 
-import './alpine/__alpine-dir'
+import './alpine/__alpine-dir';
+import './swiper/__swiper-dir';
