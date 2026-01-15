@@ -52,7 +52,7 @@ class Home extends Composer
                     'permalink' => get_permalink($id),
                     'title'     => get_the_title($id),
                      // dates (propre pour <time>)
-                    'dateLabel' => wp_date('F Y', get_post_timestamp($id), new \DateTimeZone('Europe/Paris')),
+                    'dateLabel' => ucfirst(wp_date('F Y', get_post_timestamp($id), new \DateTimeZone('Europe/Paris'))),
                     'dateIso'   => get_post_time('c', true, $id),
 
                     // featured image

@@ -4,7 +4,7 @@
 			href="{{ $link['url'] }}"
 			target="_blank"
 			rel="noopener noreferrer"
-			class="group flex p-2.5 1920:p-3.5 items-center gap-2.5 1920:gap-3.5 rounded-full border-gradient-dark-footer-network hover:px-3.5 1920:hover:px-4.5 transition-all ease-in-out duration-300"
+			class="group flex p-2.5 1920:p-3.5 items-center gap-2.5 1920:gap-3.5 rounded-full border-gradient-dark-footer-network hover:px-3.5 1920:hover:px-4.5 transition-all ease-in-out duration-300 active-shadow"
 		>
 		<x-dynamic-component
 			:component="$link['icon']"

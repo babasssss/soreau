@@ -9,3 +9,7 @@
 @utility btn-soreau-primary-active {
   @apply !px-6 1920:!px-7.5 !text-white hover:!px-6 1920:hover:!px-7.5;
 }
+
+@utility active-shadow {
+  @apply active:transition-[transform,filter,box-shadow] active:duration-200 active:scale-95 active:brightness-110 active:shadow-[0_0_0_4px_rgba(255,255,255,0.06)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20 focus-visible:ring-offset-2 focus-visible:ring-offset-dark-03;
+}
