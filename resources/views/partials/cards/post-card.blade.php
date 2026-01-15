@@ -24,7 +24,7 @@
         <span class="text-grey-95 uppercase transition-colors duration-300 group-hover:text-purple-55 font-medium leading-150">
           {{ __("Voir le projet", "soreau") }}
         </span>
-        <x-icon-arrow-top-down class="text-white 1920:size-6 size-5 transition-colors duration-300 group-hover:text-purple-55" />
+        <x-icon-arrow-up-right class="text-white 1920:size-6 size-5 transition-colors duration-300 group-hover:text-purple-55" />
       </div>
     </div>
   </a>

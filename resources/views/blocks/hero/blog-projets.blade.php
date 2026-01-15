@@ -45,7 +45,7 @@
           <x-icon-arc-concave class="absolute right-0 bottom-0 translate-x-2/2 z-10 pointer-events-none rotate-270 size-5" />
         </div>
         <div class="relative flex px-7 py-10 bg-dark-03 rounded-tl-2xl max-w-54">
-          <p class="uppercase select-none">{{ __("Faites défiler pour voir mon parcours", "soreau") }}</p>
+          <p class="uppercase select-none">{{ __("Faites défiler pour voir mes projets", "soreau") }}</p>
           <x-icon-arc-concave class="absolute right-0 top-0 -translate-y-2/2 z-10 pointer-events-none rotate-180 size-5" />
           <x-icon-arc-concave class="absolute left-0 bottom-0 -translate-x-2/2 z-10 pointer-events-none rotate-180 size-5" />
         </div>
