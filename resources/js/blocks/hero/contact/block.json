@@ -1,0 +1,27 @@
+{
+  "apiVersion": 3,
+  "name": "soreau/contact",
+  "title": "soreau : Contact",
+  "category": "theme",
+  "description": "Contact block for soreau theme.",
+  "parent": ["soreau/hero"],
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "subtitle": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundImage": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "view:blocks.hero.contact"
+}

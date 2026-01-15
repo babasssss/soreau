@@ -24,7 +24,7 @@
 
       <div class="w-full relative bg-dark-12 lg:bg-transparent ">
         @if(!empty($attributes['subtitle']) || !empty($attributes['title']))
-          <div class="bg-dark-03 w-max 1920:max-w-5xl 1440:max-w-4xl relative pr-7.5 1440:pr-12.5 1920:py-12.5 1440:py-7.5 py-0 rounded-br-2xl flex flex-col items-start 1920:gap-7.5 gap-6 self-stretch">
+          <div class="bg-dark-03 w-max 1920:max-w-5xl 1440:max-w-4xl lg:w-2/3 relative pr-7.5 1440:pr-12.5 1920:py-12.5 py-7.5 rounded-br-2xl flex flex-col items-start 1920:gap-7.5 gap-6 self-stretch">
             <div class="flex flex-col items-start gap-0 self-stretch">
               <p class="!text-subtitle-h2 uppercase">{{ $attributes['subtitle'] }}</p>
               <h1 class="!text-h2 !text-white uppercase whitespace-normal sm:whitespace-nowrap">{{ $attributes['title'] }}</h1>

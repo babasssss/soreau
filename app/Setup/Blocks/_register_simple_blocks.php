@@ -17,6 +17,7 @@ function register_simple_blocks(): void
         'hero/home-page',
         'hero/about-me',
         'hero/blog-projets',
+        'hero/contact',
         'cards',
         'cards/timeline',
     ];
