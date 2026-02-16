@@ -1,0 +1,135 @@
+.wp-block-contact-form-7-contact-form-selector {
+  .wpcf7 {
+    form {
+      &.wpcf7-form {
+        @apply flex flex-col-reverse 1920:gap-12.5 1440:gap-10 gap-7.5;
+
+        .form-soreau {
+          @apply flex flex-col justify-center items-start 1920:gap-12.5 1440:gap-10 gap-7.5 grow shrink-0 basis-0;
+
+          p { @apply w-full; }
+
+          .form-soreau-col,
+          .form-soreau-row {
+            @apply w-full;
+
+            > p {
+              @apply flex flex-col xl:flex-row 1920:gap-12.5 1440:gap-10 gap-7.5 self-stretch;
+            }
+          }
+
+          label {
+            @apply flex flex-col justify-center items-start gap-2.5 grow shrink-0 basis-0;
+            @apply 1440:text-lg text-base self-stretch font-manrope font-normal text-grey-90;
+
+            span.wpcf7-form-control-wrap {
+              @apply flex flex-col-reverse py-2.5 items-start gap-2.5 self-stretch border-b border-dark-20;
+
+              .wpcf7-form-control {
+                @apply w-full;
+
+                &.wpcf7-text,
+                &.wpcf7-textarea {
+                  @apply text-grey-70;
+                  &::placeholder {
+                    @apply uppercase text-grey-40;
+                  }
+                }
+              }
+
+              .wpcf7-not-valid-tip {
+                @apply text-red-700 1440:text-base text-sm;
+              }
+
+            }
+          }
+
+          .wpcf7-acceptance {
+            .wpcf7-list-item {
+              @apply !m-0;
+
+              label {
+                @apply flex flex-row items-start gap-2.5 self-stretch cursor-pointer select-none 1440:text-lg text-base font-manrope font-normal text-grey-40;
+              }
+
+              input[type="checkbox"] {
+                @apply size-4 shrink-0 rounded border border-grey-40 transition-all duration-300 ease-in-out cursor-pointer mt-1.5;
+                @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-55 focus-visible:ring-offset-2 focus-visible:ring-offset-dark-03;
+
+                appearance: none;
+                -webkit-appearance: none;
+                background-color: var(--color-dark-03);
+
+                &:hover {
+                  @apply border-purple-55;
+                }
+
+                &:checked {
+                  border-color: var(--color-purple-55);
+                  background-color: var(--color-purple-55);
+                }
+
+                &:checked::after {
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  background-color: var(--color-white);
+                  -webkit-mask: url('@icons/check.svg') no-repeat center / 70% 70%;
+                  mask: url('@icons/check.svg') no-repeat center / 70% 70%;
+                }
+
+                &:disabled {
+                  @apply opacity-50 cursor-not-allowed;
+                }
+              }
+            }
+          }
+
+          .form-soreau-submit {
+            p {
+              @apply relative flex w-full items-center gap-2.5 cursor-pointer;
+            }
+
+            .wpcf7-submit {
+              @apply text-white font-manrope font-semibold uppercase text-h2 h-full leading-normal cursor-pointer;
+
+            }
+
+            .form-soreau-after-submit {
+              @apply inline-flex items-center justify-center text-lg 1920:py-4.5 1920:px-12.5 1440:py-4 1440:px-10 py-3.5 px-7.5 rounded-full bg-purple-55 shadow-footer h-min;
+
+              &::after {
+                content: "";
+                @apply block shrink-0
+                  1920:size-7.5 1440:size-6 size-5
+                  transition-transform duration-300 ease-in-out;
+
+                background-color: var(--color-white);
+                -webkit-mask: url('@icons/arrow-up-right.svg') no-repeat center / contain;
+                mask: url('@icons/arrow-up-right.svg') no-repeat center / contain;
+              }
+            }
+
+            p:hover .form-soreau-after-submit::after {
+              transform: scale(1.2) rotate(45deg);
+            }
+
+            .wpcf7-submit:disabled + .wpcf7-spinner + .form-soreau-after-submit {
+              @apply opacity-50 cursor-not-allowed;
+            }
+
+            .wpcf7-spinner {
+              @apply absolute right-0 top-1/2 -translate-y-1/2 m-0 translate-x-4/2;
+              float: none;
+            }
+          }
+        }
+
+        .wpcf7-response-output {
+          @apply border-none p-1.5 rounded-sm bg-red-300 text-red-700 1440:text-base text-sm m-0;
+        }
+      }
+    }
+  }
+}

@@ -24,4 +24,16 @@
       }
     }
   }
+
+  main p a {
+    @apply !no-underline inline-flex whitespace-nowrap  items-start 1920:gap-2.5 gap-1.5 border-b border-dark-20 text-grey-95 font-manrope text-p font-medium transition-colors duration-300 hover:text-purple-55 hover:border-purple-55 leading-150;
+
+    &::after {
+      content: '';
+      -webkit-mask: url('@icons/arrow-up-right.svg') no-repeat center / contain;
+      mask: url('@icons/arrow-up-right.svg') no-repeat center / contain;
+      @apply bg-current size-6 inline-block align-middle transition-transform duration-200 ease-linear translate-x-0;
+    }
+  }
+
 }
