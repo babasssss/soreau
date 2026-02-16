@@ -1,5 +1,5 @@
 <div class="block lg:hidden absolute bottom-0 right-0" x-data="MenuCanvas()" x-cloak @keydown.escape.window="close();" x-init="$watch('open', v => document.body.classList.toggle('overflow-hidden', v))">
-  <button type="button" class="inline-flex p-5 items-center justify-center gap-2.5 rounded-tl-(--rounded-20) border-t border-l border-dark-12 cursor-pointer" @click="openDrawer($el)">
+  <button type="button" class="inline-flex p-5 items-center justify-center gap-2.5 rounded-tl-20 border-t border-l border-dark-12 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-55 focus-visible:ring-offset-2 focus-visible:ring-offset-dark-03" @click="openDrawer($el)">
     <x-icon-menu class="text-white h-7 w-7"/>
   </button>
 
@@ -11,7 +11,7 @@
       role="dialog" aria-modal="true" :aria-labelledby="titleId">
 
       <header class="flex items-center justify-end px-2.5 py-2 border-b border-dark-12">
-        <button type="button" class="rounded-lg p-2 hover:bg-dark-3 transition cursor-pointer" @click="close()" aria-label="Fermer">
+        <button type="button" class="rounded-lg p-2 hover:bg-dark-3 transition cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-55 focus-visible:ring-offset-2 focus-visible:ring-offset-dark-03" @click="close()" aria-label="Fermer">
           <x-icon-x class="h-6 w-6 text-white"/>
         </button>
       </header>

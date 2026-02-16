@@ -1,6 +1,6 @@
 <header class="w-full border-b border-dark-12">
   <div class="mx-auto px-4 sm:px-0 w-full sm:w-8/10 1440:w-full max-w-full 1440:max-w-(--max-w-1316) 1920:max-w-(--max-w-1670) flex flex-col items-start gap-2.5">
-    <div class="relative flex flex-wrap justify-between items-center self-stretch border-r border-l border-dark-12 1920:py-7.5 1920:px-10 pb-5 px-4.5 lg:pt-5 pt-10">
+    <div class="relative flex flex-wrap justify-between items-center self-stretch border-r border-l border-dark-12 1920:py-7.5 1920:px-10 py-5 px-4.5">
       @php
         $homeUrl = esc_url(home_url('/'));
         $isActiveHome = is_front_page() || (is_home() && ! is_front_page());
