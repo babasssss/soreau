@@ -5,7 +5,7 @@
         $homeUrl = esc_url(home_url('/'));
         $isActiveHome = is_front_page() || (is_home() && ! is_front_page());
       @endphp
-      <a href="{{ $homeUrl }}" class="text-white font-bold leading-150 !no-underline text-2xl" @if($isActiveHome) aria-current="page" @endif>BASTIEN</a>
+      <a href="{{ $homeUrl }}" class="text-white font-bold leading-150 !no-underline text-2xl font-orbitron" @if($isActiveHome) aria-current="page" @endif>BASTIEN</a>
       <x-menu name="secondary_navigation" />
       <x-menu name="primary_navigation" />
 

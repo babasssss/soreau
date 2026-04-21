@@ -15,7 +15,7 @@
     <div class="relative flex flex-col md:flex-row md:items-stretch w-full sm:w-8/10 mx-auto max-w-full 1440:max-w-(--max-w-1279) 1920:max-w-(--max-w-1593) bg-dark-03 border-l border-r border-dark-12">
       <div class="flex flex-col items-start 1920:gap-15 1440:gap-12.5 gap-5 py-10 px-5 1440:py-20 1440:px-14 1920:py-25 1920:px-20">
         <p class="text-grey-50 text-sm 1440:text-base 1920:text-xl font-semibold uppercase">
-          {{ __('A more meaningful home for photography', 'soreau') }}
+          {{ __('Un lieu pensé pour donner vie à des expériences web', 'soreau') }}
         </p>
         <x-lets-work-together />
       </div>

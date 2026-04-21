@@ -18,15 +18,15 @@ class ServicesBanner extends Component
         $this->services = !empty($services)
             ? $services
             : [
-                'Event Photography',
+                'Performance web',
                 'Commercial Photography',
-                'Product Photography',
-                'Portrait Photography',
-                'Lifestyle Photography',
-                'Wedding Photography',
-                'Landscape Photography',
-                'Branding Photography',
-                'Portrait Photography',
+                'Maintenance & évolution',
+                'API & intégrations',
+                'Développement front-end',
+                'Développement back-end',
+                'E-commerce',
+                'Sites vitrines',
+                'WordPress sur mesure',
             ];
     }
 
